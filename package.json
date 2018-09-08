@@ -1,0 +1,30 @@
+{
+  "name": "discordbotdersleri",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "Serhan",
+  "license": "ISC",
+  "dependencies": {
+    "audit": "0.0.6",
+    "chalk": "^2.4.1",
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "ffmpeg-binaries": "^4.0.0",
+    "listener": "^1.0.1",
+    "module": "^1.2.5",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "name": "0.0.2",
+    "of": "^1.0.0",
+    "opusscript": "0.0.6",
+    "run": "^1.4.0",
+    "simple-youtube-api": "^5.0.2",
+    "undefined": "^0.1.0",
+    "update": "^0.7.4",
+    "ytdl-core": "^0.25.0"
+  }
+}
