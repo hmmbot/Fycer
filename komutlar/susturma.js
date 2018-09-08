@@ -43,8 +43,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'konuştur',
+  name: 'susturma',
   category: 'moderasyon',
   description: 'Susturulmuş bir kişinin susturmasını kaldırmayı sağlar.',
-  usage: 'konuştur <@kişi-etiket>'
+  usage: 'susturma <@kişi-etiket>'
 };
