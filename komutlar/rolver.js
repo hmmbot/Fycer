@@ -8,6 +8,8 @@ exports.run = (client, message, args) => {
   let user = message.mentions.users.first();
   let guild = message.guild
   let yetki = args.slice(1).join(' ');
+  let modlog = guild.channels.find('name', 'mod-log');
+  if (!modlog) return message.channel.send('❎ | **mod-log** kanalı bulunamadı.').catch(console.error);
   let muteRole = client.guilds.get(message.guild.id).roles.find('name', yetki);
   if (!muteRole) return message.channel.send(`:x: | **${args[1]}** isminde bir rol bulunamadı.`).catch(console.error);
   message.channel.send(`✔ | Başarılı, **${yetki}** isimli rol başarılı bir şekilde **${args[0]}** isimli kullanıcıya verildi.`);
