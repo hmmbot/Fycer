@@ -401,7 +401,13 @@ client.on('message', msg => {
   } 
 		
 });
-
+client.on("message", msg => {
+  const kufur = ["amk", "aq", "orospu", "oruspu", "oç", "sikerim", "yarrak", "piç", "amq", "sik", "amcık", "çocu", "sex", "seks", "amına", "meme", "göt", "götünü sikim"];
+  if (kufur.some(word => msg.content.includes(word)) ) {
+      msg.delete()
+      msg.reply("Küfür etme!")
+  }
+});
 client.elevation = message => {
   if(!message.guild) {
 	return; }
