@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   const ozelmesajuyari = new Discord.RichEmbed()
   .setDescription(`You can not use commands here.`)
   return message.author.sendEmbed(ozelmesajuyari); }
-  if (message.mentions.users.size < 1) return message.channel.send('❎ | Bu komutun kullanımı şu şekildedir > **dve!rol-ver @kullanıcı <rolün adı>**').catch(console.error);
+  if (message.mentions.users.size < 1) return message.channel.send('❎ | Bu komutun kullanımı şu şekildedir > **f!rol-ver @kullanıcı <rolün adı>**').catch(console.error);
   let user = message.mentions.users.first();
   let guild = message.guild
   let yetki = args.slice(1).join(' ');
@@ -40,7 +40,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'rol-ver',
+  name: 'rolver',
   description: 'İstediğiniz kişiye rol verir.',
-  usage: 'rol-ver [kullanıcı] [sebeb]'
+  usage: 'rolver [kullanıcı] [sebeb]'
 };
